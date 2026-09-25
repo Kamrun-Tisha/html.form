@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Form</title>
+</head>
+
+<body>
+
+    <form>
+
+        <fieldset>
+            <legend>Contact Information</legend>
+
+            <label>First Name:</label><br>
+            <input type="text" value="Kamrun"><br><br>
+
+            <label>Last Name:</label><br>
+            <input type="text" value="Nahar Tisha"><br><br>
+
+            <label>Email:</label><br>
+            <input type="email"><br><br>
+
+            <label>Telephone:</label><br>
+            <input type="tel"><br><br>
+
+            <label>Preferred contact method:</label><br><br>
+
+            <input type="checkbox">
+            <label>Email</label>
+
+            <input type="checkbox">
+            <label>Telephone</label>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Details</legend>
+
+            <label>Message Subject:</label><br>
+            <input type="text" value="HTML Form Assignment"><br><br>
+
+            <label>Message:</label><br>
+            <textarea rows="5" cols="50">Hello,
+This is my HTML form submission.
+Thank you!</textarea><br><br>
+
+            <label>Attach a file:</label><br>
+            <input type="file">
+
+        </fieldset>
+
+        <br>
+
+        <input type="submit" value="Send">
+
+    </form>
+
+</body>
+</html>
