@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Google Map Search</title>
+</head>
+<body>
+
+    <h2>Map Search</h2>
+
+    <input type="text" id="street" placeholder="Street Name">
+    <input type="text" id="city" placeholder="City Name">
+    <button onclick="searchMap()">Search</button>
+
+    <br><br>
+
+    <iframe id="map" width="600" height="400" src="https://maps.google.com/maps?q=Helsinki&output=embed"></iframe>
+
+    <script>
+        function searchMap() {
+            var streetName = document.getElementById('street').value;
+            var cityName = document.getElementById('city').value;
+            
+            var query = streetName + ' ' + cityName;
+            
+            document.getElementById('map').src = 'https://maps.google.com/maps?q=' + query + '&output=embed';
+        }
+    </script>
+
+</body>
+</html>
